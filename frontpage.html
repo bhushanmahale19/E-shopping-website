@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+      <marquee><p>70% OFF HURRY!! UP</p></marquee>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+
+    </div>
+    <div class="login">
+      <a href="test.html">Signup</a>
+    </div>
+<nav class="sidebar">
+      <div class="text"> Hello    ,   </div>
+<ul>
+<li class="active"><a href="#">Home</a></li>
+<li>
+          <a href="#" class="feat-btn">Mobiles
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+
+<a href="product.html">Samsung</a>
+<li><a href="iphone.html">Iphone</a></li>
+</ul>
+</li>
+<li>
+          <a href="#" class="serv-btn">Home Applience
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="serv-show">
+<li><a href="home.html">Washing Machine</a></li>
+<li><a href="freeze.html">Refrigerator</a></li>
+</ul>
+</li>
+<li><a href="laptop.html">Laptops</a></li>
+<li><a href="accesories.html">Accessories</a></li>
+<li><a href="#">Television</a></li>
+<li><a href="#">Air conditioner</a></li>
+</ul>
+</nav>
+    <div class="content">
+      <div class="header">
+</div>
+
+</div>
+<script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+
+
+<div class="logo">
+  <img src="logo.png" width="200px" >
+</div>
+
+
+<div class="para">
+<h1> Take your E-shopping experience with <br />Gada Electronics! </h1>
+
+
+<div class="gada">
+<img src="gada2.png" height="450px" width="400px" >
+</div>
+</div>
+
+
+  </body>
+</html>

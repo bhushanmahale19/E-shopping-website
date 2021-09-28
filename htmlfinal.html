@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href=" ./style.css" />
+  </head>
+  <title> First page </title>
+  <body>
+    <br />
+
+<title>side menu </title>
+<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+
+<!-- <div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div> -->
+
+
+
+
+<nav class="sidebar">
+  <div class="text" >Side menu</div>
+     <ul>
+  <li><a href="#"> Home</a></li>
+    <li><a href="#" class="offer-btn"> Offer zone
+    <i class="fa fa-caret-down first" style="font-size:24px"></i> </a>
+      <ul class="offer-show">
+        <li><a href="#"> demo</a></li>
+        <li><a href="#"> demo2</a></li>
+      </ul>
+      </li>
+
+
+
+      <li><a href="#" class="mob-btn"> Mobiles & Tablets
+      <i class="fa fa-caret-down second" style="font-size:24px"></i>
+      <ul class="mob-show">
+
+          <li><a href="#"> Samsung </a></li>
+          <li><a href="#"> add more </a></li>
+          <li><a href="#"> add more </a></li>
+      </ul>
+      </li>
+            <li><a href="#"> Home Appliences</a></li>
+        <li><a href="#"> Electronics & Accessories</a></li>
+      <li><a href="#"> TV & Appliences</a></li>
+          <li><a href="#"> Air conditionors</a></li>
+
+
+
+
+     </ul>
+</nav>
+<script>
+
+
+  $('.offer-btn').click(function(){
+    $( 'nav ul .offer-show').toggleClass("show");
+    $( 'nav ul .first').toggleClass("rotate");
+  });
+  $('.mob-btn').click(function(){
+    $( 'nav ul .mob-show').toggleClass("show1");
+    $( 'nav ul .second').toggleClass("rotate");
+  });
+  $('nav ul li').click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  })
+</script>
+    </body>
